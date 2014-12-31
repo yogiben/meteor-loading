@@ -14,6 +14,10 @@ https://github.com/tobiasahlin/SpinKit
 meteor add pcel:loading
 ```
 
+Demo
+---------------------
+[loading.meteor.com](https://loading.meteor.com)
+
 
 Usage
 ---------------------
