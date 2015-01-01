@@ -1,6 +1,6 @@
 # [loading](https://loading.meteor.com)
 
-Its a bundle of PleaseWait.js + SpinKit CSS Spinners for a beautiful loading screen for your app
+Its a bundle of PleaseWait.js + SpinKit CSS Spinners for a beautiful loading splash screen for your app
 
 PleaseWait.js<br>
 **"A simple library to show your users a beautiful splash page while your application loads."**<br>
