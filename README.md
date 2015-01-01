@@ -1,4 +1,4 @@
-meteor-loading
+pcel:loading
 ============
 
 PleaseWait.js<br>
