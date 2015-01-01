@@ -1,5 +1,6 @@
-meteor-loading
-============
+# [loading](https://loading.meteor.com)
+
+Its a bundle of PleaseWait.js + SpinKit CSS Spinners for a beautiful loading screen for your app
 
 PleaseWait.js<br>
 **"A simple library to show your users a beautiful splash page while your application loads."**<br>
@@ -9,19 +10,16 @@ SpinKit<br>
 **"A collection of loading indicators animated with CSS."**<br>
 https://github.com/tobiasahlin/SpinKit
 
-Install
----------------------
+## Install
 ```
 meteor add pcel:loading
 ```
 
-Demo
----------------------
+## Demo
 [loading.meteor.com](https://loading.meteor.com)
 
 
-Usage
----------------------
+## Usage
 
 ##### Template
 ```html
