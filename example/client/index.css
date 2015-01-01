@@ -2,16 +2,50 @@
   width: 200px;
 }
 
-.pg-loading-screen .pg-loading-html p {
-  color: #FFF;
+.loading-message {
+  color: #fff;
   font-size: 25px;
   font-weight: 300;
   font-family: sans-serif;
   margin-bottom: 100px;
 }
 
+.sk-spinner-rotating-plane.sk-spinner {
+  background-color: #fff;
+}
+
+.sk-spinner-double-bounce .sk-double-bounce1, .sk-spinner-double-bounce .sk-double-bounce2 {
+  background-color: #fff;
+}
+
+.sk-spinner-wave div {
+  background-color: #fff;
+}
+
 .sk-spinner-wandering-cubes .sk-cube1, .sk-spinner-wandering-cubes .sk-cube2 {
   background-color: #fff;
-  width: 12px;
-  height: 12px;
+}
+
+.sk-spinner-pulse.sk-spinner {
+  background-color: #fff;
+}
+
+.sk-spinner-chasing-dots .sk-dot1, .sk-spinner-chasing-dots .sk-dot2 {
+  background-color: #fff;
+}
+
+.sk-spinner-three-bounce div {
+  background-color: #fff;
+}
+
+.sk-spinner-circle .sk-circle:before {
+  background-color: #fff;
+}
+
+.sk-spinner-cube-grid .sk-cube {
+  background: #fff;
+}
+
+.sk-spinner-fading-circle .sk-circle:before {
+  background-color: #fff;
 }
