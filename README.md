@@ -9,7 +9,8 @@ SpinKit<br>
 **"A collection of loading indicators animated with CSS."**<br>
 https://github.com/tobiasahlin/SpinKit
 
-#### Install
+Install
+---------------------
 ```
 meteor add pcel:loading
 ```
