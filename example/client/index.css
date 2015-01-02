@@ -1,11 +1,13 @@
+/* Hide initial HTML */
 body > .inner {
   display: none;
 }
-
-.pg-loaded > .inner {
+body.pg-loaded > .inner {
   display: block;
 }
 
+
+/* Custom loading logo/message styles */
 .pg-loading-screen .pg-loading-logo {
   width: 200px;
 }
@@ -18,6 +20,8 @@ body > .inner {
   color: #fff;
 }
 
+
+/* Change default spinner's CSS to #fff */
 .sk-spinner-rotating-plane.sk-spinner {
   background-color: #fff;
 }

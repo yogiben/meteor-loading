@@ -3,7 +3,7 @@ Template.loading.rendered = function () {
   this.loading = window.pleaseWait({
     logo: '/images/Meteor-logo.png',
     backgroundColor: pickRandom(backgrounds),
-    loadingHtml: '<p class="loading-message">' + pickRandom(messages) + '</p>' 
+    loadingHtml: '<p class="loading-message">' + pickRandom(messages) + '</p>'
                 + pickRandom(spinners)
   });
 
@@ -12,8 +12,8 @@ Template.loading.rendered = function () {
   Meteor.setTimeout(function () {
     loading.finish();
   }, 2500);
-
 };
+
 
 Template.loading.destroyed = function () {
   this.loading.finish();
@@ -42,7 +42,7 @@ var messages = [
 
 // Backgrounds
 var backgrounds = [ '#7f8c8d', '#1abc9c', '#2980b9', '#7f8c8d',
-            '#f1c40f', '#27ae60', '#7f8c8d', '#7f8c8d' ];
+                    '#f1c40f', '#27ae60', '#7f8c8d', '#7f8c8d' ];
 
 //
 // Spinners from SpinKit
