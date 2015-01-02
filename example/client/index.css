@@ -1,13 +1,21 @@
+body > .inner {
+  display: none;
+}
+
+.pg-loaded > .inner {
+  display: block;
+}
+
 .pg-loading-screen .pg-loading-logo {
   width: 200px;
 }
 
 .loading-message {
-  color: #fff;
+  margin-bottom: 100px;
+  font-family: sans-serif;
   font-size: 25px;
   font-weight: 300;
-  font-family: sans-serif;
-  margin-bottom: 100px;
+  color: #fff;
 }
 
 .sk-spinner-rotating-plane.sk-spinner {
