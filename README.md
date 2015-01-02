@@ -33,31 +33,31 @@ meteor add pcel:loading
 ```js
 Template.loading.rendered = function () {
   this.loading = window.pleaseWait({
-    logo: '',
-    backgroundColor: '#2980b9',
-    loadingHtml: '<p class="loading-message">Loading Message</p>'
-                +'<div class="sk-spinner sk-spinner-wandering-cubes"><div class="sk-cube1"></div><div class="sk-cube2"></div></div>'
+    logo: '/images/Meteor-logo.png',
+    backgroundColor: '#7f8c8d',
+    loadingHtml: message + spinner;
   });
 };
 
 Template.loading.destroyed = function () {
   this.loading.finish();
 };
+
+var message = '<p class="loading-message">Loading Message</p>';
+var spinner = '<div class="sk-spinner sk-spinner-rotating-plane"></div>'
 ```
 
 ##### Custom CSS (SpinKit spinners: [here](http://tobiasahlin.com/spinkit/))
 ```css
-.pg-loading-screen .pg-loading-html p {
-  color: #FFF;
+.loading-message {
+  color: #fff;
   font-size: 25px;
   font-weight: 300;
   font-family: sans-serif;
 }
 
-.sk-spinner-wandering-cubes .sk-cube1, .sk-spinner-wandering-cubes .sk-cube2 {
+.sk-spinner-rotating-plane.sk-spinner {
   background-color: #fff;
-  width: 12px;
-  height: 12px;
 }
 ```
 
