@@ -1,6 +1,8 @@
 # [loading](https://loading.meteor.com)
 
-Bundle of PleaseWait.js + SpinKit CSS Spinners for a beautiful loading splash screen for Meteor
+Beautiful loading splash screen for your Meteor app
+
+This is a bundle of PleaseWait.js + SpinKit CSS Spinners packaged for Meteor
 
 PleaseWait.js<br>
 **"A simple library to show your users a beautiful splash page while your application loads."**<br>
