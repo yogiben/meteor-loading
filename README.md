@@ -29,13 +29,13 @@ meteor add pcel:loading
 </template>
 ```
 
-##### JS (pleaseWait demo/docs [here](http://pathgather.github.io/please-wait/))
+##### Javascript (pleaseWait demo/docs [here](http://pathgather.github.io/please-wait/))
 ```js
 Template.loading.rendered = function () {
   this.loading = window.pleaseWait({
     logo: '/images/Meteor-logo.png',
     backgroundColor: '#7f8c8d',
-    loadingHtml: message + spinner;
+    loadingHtml: message + spinner
   });
 };
 
@@ -44,10 +44,10 @@ Template.loading.destroyed = function () {
 };
 
 var message = '<p class="loading-message">Loading Message</p>';
-var spinner = '<div class="sk-spinner sk-spinner-rotating-plane"></div>'
+var spinner = '<div class="sk-spinner sk-spinner-rotating-plane"></div>';
 ```
 
-##### Custom CSS (SpinKit spinners: [here](http://tobiasahlin.com/spinkit/))
+##### CSS (SpinKit spinners: [here](http://tobiasahlin.com/spinkit/))
 ```css
 .loading-message {
   color: #fff;
