@@ -1,7 +1,7 @@
 Package.describe({
   name: 'pcel:loading',
-  summary: 'SpinKit + please-wait = beautiful loading page',
-  version: '1.0.0',
+  summary: 'A beautiful loading splash screen (please-wait + spinkit bundle)',
+  version: '1.0.1',
   git: 'https://github.com/pcel/meteor-loading',
 
   // Source repositories
