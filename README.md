@@ -18,7 +18,7 @@ meteor add pcel:loading
 ```
 
 ## Demo
-[loading.meteor.com](https://loading.meteor.com)
+[loading.meteor.com](https://loading.meteor.com) and demo source [here](https://github.com/pcel/meteor-loading/tree/master/example)
 
 
 ## Usage
