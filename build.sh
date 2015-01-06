@@ -6,7 +6,7 @@
 #
 ################################################################################
 REPOS=(    $( grep -E 'source_git.*:' package.js | grep -Eo "http[^('|\")]+" ) )
-VERSIONS=( $( grep -E 'source_ver.*:' package.js | sed -e 's/"//g' -e 's/,//g' -e 's/ //g' | cut -d: -f2 ) )
+VERSIONS=( $( grep -E 'source_ver.*:' package.js | cut -d: -f2 | tr -dc "[:alnum:][:digit:].\n" ) )
 
 # Directories to preserve on package repositories (remove the rest)
 ITEMS=( )
@@ -37,7 +37,7 @@ fetch_and_pick() {
   for item in "${ITEMS[@]}"; do
     if [ -d ".git-repo/$item" -o -f ".git-repo/$item" ]; then
       echo "  - Copying $item"
-      cp -Rf .git-repo/$item lib || { echo "Error copying ./.git-repo/$item to ./lib"; exit 1; }
+      cp -Rf ".git-repo/$item" lib || { echo "Error copying ./.git-repo/$item to ./lib"; exit 1; }
     fi
   done
 }
