@@ -32,15 +32,20 @@ meteor add pcel:loading
 ##### Javascript (pleaseWait demo/docs [here](http://pathgather.github.io/please-wait/))
 ```js
 Template.loading.rendered = function () {
-  this.loading = window.pleaseWait({
-    logo: '/images/Meteor-logo.png',
-    backgroundColor: '#7f8c8d',
-    loadingHtml: message + spinner
-  });
+  if ( ! Session.get('loadingSplash') ) {
+    this.loading = window.pleaseWait({
+      logo: '/images/Meteor-logo.png',
+      backgroundColor: '#7f8c8d',
+      loadingHtml: message + spinner
+    });
+    Session.set('loadingSplash', true); // just show loading splash once
+  }
 };
 
 Template.loading.destroyed = function () {
-  this.loading.finish();
+  if ( this.loading ) {
+    this.loading.finish();
+  }
 };
 
 var message = '<p class="loading-message">Loading Message</p>';
