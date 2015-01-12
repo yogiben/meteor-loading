@@ -3,8 +3,11 @@
   width: 200px;
 }
 
+.pg-loading-screen .pg-loading-html {
+  margin-top: 50px;
+}
+
 .loading-message {
-  margin-bottom: 100px;
   font-family: sans-serif;
   font-size: 25px;
   font-weight: 300;
