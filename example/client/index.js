@@ -1,3 +1,7 @@
+Template.registerHelper('getBody', function () {
+  return Session.get('splashLoaded') ? 'home' : 'loading';
+});
+
 Template.loading.rendered = function () {
   // launch splash
   this.loading = window.pleaseWait({
@@ -11,9 +15,9 @@ Template.loading.rendered = function () {
   var loading = this.loading;
   Meteor.setTimeout(function () {
     loading.finish();
-  }, 2500);
+    Session.set('splashLoaded', true);
+  }, 3000);
 };
-
 
 Template.loading.destroyed = function () {
   this.loading.finish();

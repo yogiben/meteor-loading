@@ -1,12 +1,3 @@
-/* Hide initial HTML */
-body > .inner {
-  display: none;
-}
-body.pg-loaded > .inner {
-  display: block;
-}
-
-
 /* Custom loading logo/message styles */
 .pg-loading-screen .pg-loading-logo {
   width: 200px;
@@ -19,7 +10,6 @@ body.pg-loaded > .inner {
   font-weight: 300;
   color: #fff;
 }
-
 
 /* Change default spinner's CSS to #fff */
 .sk-spinner-rotating-plane.sk-spinner {

@@ -6,8 +6,7 @@
 </head>
 
 <body>
-{{ >loading }}
-{{ >home }}
+  {{> Template.dynamic template=getBody }}
 </body>
 
 <template name="loading"></template>
@@ -20,5 +19,5 @@
         <a href="https://github.com/pcel/meteor-loading" target="_blank">View source</a> on GitHub
       </div>
     </div>
-  </div>  
+  </div>
 </template>
