@@ -7,14 +7,12 @@
 ################################################################################
 REPOS=(    $( grep -E 'source_git.*:' package.js | grep -Eo "http[^('|\")]+" ) )
 VERSIONS=( $( grep -E 'source_ver.*:' package.js | cut -d: -f2 | tr -dc "[:alnum:][:digit:].\n" ) )
+DEMO="$(grep -E 'demo.*:' package.js | cut -d: -f2 | tr -dc "[:alnum:][:digit:]-.")"
 
-# Directories to preserve on package repositories (remove the rest)
-ITEMS=( )
-
-# Files to cherry-pick
-ITEMS+=( "css/spinkit.css"
-         "build/please-wait.css"
-         "build/please-wait.js" )
+# Directories/Files to copy from repos
+ITEMS=( "css/spinkit.css"
+        "build/please-wait.css"
+        "build/please-wait.js" )
 
 ################################################################################
 # Chdir into script dir
@@ -52,6 +50,12 @@ for SEQ in $(seq 0 $(( ${#REPOS[@]} - 1)) ); do
   echo "Downloading $REPO - $VERSION"
   fetch_and_pick
 done
+
+# Publish latest demo
+if [ "$DEMO" -a -d example ]; then
+  echo "Updating demo site @${DEMO}"
+  cd example && meteor update && meteor deploy "$DEMO"
+fi
 
 echo "All done"
 ################################################################################

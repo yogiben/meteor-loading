@@ -2,6 +2,7 @@ Package.describe({
   name: 'pcel:loading',
   summary: 'A beautiful loading splash screen (please-wait + spinkit bundle)',
   version: '1.0.3',
+  demo: 'loading.meteor.com',
   git: 'https://github.com/pcel/meteor-loading',
 
   // Source repositories
