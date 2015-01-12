@@ -1,7 +1,7 @@
 Package.describe({
   name: 'pcel:loading',
   summary: 'A beautiful loading splash screen (please-wait + spinkit bundle)',
-  version: '1.0.2',
+  version: '1.0.3',
   git: 'https://github.com/pcel/meteor-loading',
 
   // Source repositories
@@ -10,7 +10,7 @@ Package.describe({
     source_ver: 'v0.0.2'
   }, {
     source_git: 'https://github.com/tobiasahlin/SpinKit',
-    source_ver: '1.0.0'
+    source_ver: '1.0.1'
   }]
 });
 
